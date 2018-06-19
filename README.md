@@ -47,3 +47,11 @@ Lần lượt các hành động sau để khởi tạo component:
 - Gọi hàm componetDidUpdate()
 ### Khi Unmount component
 - Gọi hàm componentWillUnmount()
+---------------------------------------------------------------------
+# Những điều nên hay ko nên làm trong life-cycle react
+### Contructor
+    - Nên:
+    > thiết lập state ban đầu
+    > nếu không sử dụng cú pháp thuộc tính class - chuẩn bị tất cả các fields class và ràng buộc các function sẽ được pass như callbacks
+    - Ko:
+    > gây ra bất kỳ side-effects (hiệu ứng lề) (gọi AJAX ....)
