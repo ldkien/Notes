@@ -1,4 +1,6 @@
 # Notes
+
+-----------------------------------------------------------
 $scope.readFile = function(files,success) {
     	var data= new Array();
     	if(files===undefined||files==null){
@@ -17,3 +19,29 @@ $scope.readFile = function(files,success) {
  	        return success(results);
  	    });
 	}
+------------------------------------------------------------
+# Vòng đời của component
+### Khởi tạo Component
+Lần lượt các hành động sau để khởi tạo component:
+
+- Khởi tạo Class (đã thừa kế từ class Component của React)
+- Khởi tạo giá trị mặc định cho Props (defaultProps)
+- Khởi tạo giá trị mặc định cho State (trong hàm constuctor)
+- Gọi hàm componentWillMount()
+- Gọi hàm render()
+- Gọi hàm componentDidMount()
+### Khi State thay đổi
+- Cập nhật giá trị cho state
+- Gọi hàm shouldComponentUpdate()
+- Gọi hàm componentWillUpdate() – với điều kiện hàm trên return true
+- Gọi hàm render()
+- Gọi hàm componentDidUpdate()
+- Khi Props thay đổi
+### Cập nhật giá trị cho props
+- Gọi hàm componentWillReceiveProps()
+- Gọi hàm shouldComponentUpdate()
+- Gọi hàm componentWillUpdate() – với điều kiện hàm trên return true
+- Gọi hàm render()
+- Gọi hàm componetDidUpdate()
+### Khi Unmount component
+- Gọi hàm componentWillUnmount()
