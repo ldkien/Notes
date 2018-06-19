@@ -110,5 +110,5 @@ nếu giá trị đã cho thay đổi->thực hiện các thay đổi tiếp the
 	* Ko:
 		> gọi this.setState vì nó sẽ tạo ra một re-render
 --------------------------------------------------------------
-- thay đổi, update realm table tham khảo từ khóa <a href= "https://github.com/realm/realm-java/tree/master/examples/migrationExample">migration</a>
+- Thay đổi, update realm table tham khảo từ khóa <a target="_blank" href= "https://github.com/realm/realm-java/tree/master/examples/migrationExample">migration</a>
 
