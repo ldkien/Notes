@@ -1,6 +1,7 @@
 # Notes
 
 -----------------------------------------------------------
+```javascript
 $scope.readFile = function(files,success) {
     	var data= new Array();
     	if(files===undefined||files==null){
@@ -19,6 +20,7 @@ $scope.readFile = function(files,success) {
  	        return success(results);
  	    });
 	}
+```
 ------------------------------------------------------------
 # Vòng đời của component
 ### Khởi tạo Component
