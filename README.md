@@ -109,5 +109,6 @@ nếu giá trị đã cho thay đổi->thực hiện các thay đổi tiếp the
 		> tạo ra side-effects (hiệu ứng lề) (gọi AJAX ....)
 	* Ko:
 		> gọi this.setState vì nó sẽ tạo ra một re-render
-
+--------------------------------------------------------------
+- thay đổi, update realm table tham khảo từ khóa [migration]
 
