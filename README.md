@@ -87,12 +87,12 @@ componentWillReceiveProps(nextProps) {
 		> gây ra bất kỳ side-effects (hiệu ứng lề) (gọi AJAX ....)
 		> gọi setState
 ### componentWillUpdate(nextProps, nextState)
-- Có thể được sử dụng thay cho componentWillReceiveProps trong trường hợp shouldComponentUpdate đc implement(true)
-vì khi này component chắc chắn được render lại
 	* Nên:
 		> đồng bộ hóa state với props
 	* Ko:
     		> gây ra bất kỳ side-effects (hiệu ứng lề) (gọi AJAX ....)
+- Có thể được sử dụng thay cho componentWillReceiveProps trong trường hợp shouldComponentUpdate đc implement(true)
+vì khi này component chắc chắn được render lại
 ### componentDidUpdate(prevProps, prevState, prevContext)
 - hàm này được đảm bảo gọi duy nhất trong quá trình re-render
 -  hàm này được gọi với các object-maps của các props, state và context **trước đây** => kiểm tra
